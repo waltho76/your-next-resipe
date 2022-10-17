@@ -1,25 +1,31 @@
 let button = document.querySelector("#searchButton")
 
+//use Event as a parameter
 async function getData (event) {
-    event.preventDefault()
-let textInput = document.querySelector("#inputBar").value    
-fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${textInput}`)
-.then(res => {
-    return res.json()
-})
-.then(res => {
-console.log("success!", res.meals[0])
-let resipe = document.querySelector("#resipe")
-let foodImg = document.querySelector(`#imgIns`)
+event.preventDefault()
+let textInput = document.querySelector("#inputBar").value.toLowerCase()
+fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?s=${textInput}`)
+    .then(res => {
+        return res.json()
+    })
+    .then(res => {
+        console.log("success!", res.meals)
+        let recipeTitle = document.querySelector("#recipeTitle")
+        let recipeImg = document.querySelector(`#imgIns`)
+        let recipeList = document.querySelector(`#recipeList`)
+       // let moves = document.querySelector(`#moves`)
 
-Types.innerHTML = ``
-res.meals.forEach(typ) => {return meals.innerHTML += `<li>"${textInput}"</li>`
+       
+        recipeTitle.innerText = res.meals.strMeal
 
-})
+        recipeImg.innerHTML = `<img src="${res.meals.strMealThumb}"/>`
+
+        recipeList.innerHTML = ``
+        res.meals.forEach((rl) => {return recipeList.innerHTML += `<li>“${rl.meal}“</li>`})
+
+        
+    })
+    
+    
 }
-
-
-
-
-
-button.addEventListener("click", getData)
+button.addEventListener("click", getData);
