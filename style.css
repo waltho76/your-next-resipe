@@ -1,38 +1,25 @@
-* {
-    background-color: cyan;
-    
-}
-
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    column-gap: 10px;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-areas: "ad1 ad"
-                        "main body"
-                        "ad2 ad";
+    background-color: chartreuse;
+    
+    
+    
+    
 }               
 .container {
-    grid-area: main;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-}
-.ad1 {
-    grid-area: "ad1";
-    width: 15%;
-    background-color: orange;
-    justify-content: center;
+    background-color: bisque;
+    
 
 }
-.ad2 {
-    grid-area: ad2;
+.ad {
+    
     width: 20%;
     background-color: orange;
-    justify-content: center;
     
+
 }
+
 img {
+    background-color: darkred;
     width: 40%;
     display: flex;
     
