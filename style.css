@@ -40,8 +40,17 @@ h1 {
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size: 60px;
+    text-shadow: 2px 5px #F7B99A;
 } 
 
 form {
     text-align: center;
-}   
+}
+
+#inputBar, #searchButton {
+    border-radius: 20px;
+}
+
+#ingredients {
+    
+}
