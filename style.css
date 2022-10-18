@@ -1,3 +1,44 @@
+* {
+    background-color: cyan;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    grid-template-columns: 30% auto;
+    column-gap: 10px;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: "ad1 ad"
+                        "main body"
+                        "ad2 ad";
+}               
+.container {
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.ad1 {
+    grid-area: "ad1";
+    width: 15%;
+
+}
+.ad2 {
+    grid-area: ad2;
+    width: 15%;
+}
 img {
-    width: 25%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+#inputBar {
+    text-align: center;
+}   
+#recipeDesc {
+    padding: 60px;
 }
