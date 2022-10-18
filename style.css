@@ -1,13 +1,13 @@
 * {
     background-color: cyan;
-    box-sizing: border-box;
+    
 }
 
 .wrapper {
-    display: flex;
-    grid-template-columns: 30% auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
     column-gap: 10px;
-    grid-template-rows: 60px auto 60px;
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas: "ad1 ad"
                         "main body"
                         "ad2 ad";
@@ -21,24 +21,21 @@
 .ad1 {
     grid-area: "ad1";
     width: 15%;
+    background-color: orange;
+    justify-content: center;
 
 }
 .ad2 {
     grid-area: ad2;
-    width: 15%;
+    width: 20%;
+    background-color: orange;
+    justify-content: center;
+    
 }
 img {
     width: 40%;
     display: flex;
-    align-items: center;
+    
 }
 
-h1 {
-    text-align: center;
-}
-#inputBar {
-    text-align: center;
-}   
-#recipeDesc {
-    padding: 60px;
-}
+
