@@ -19,7 +19,19 @@ body {
     height: 100vh;
     overflow: scroll;
 }   
-    
+#ingmes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ingredients measure";
+
+}
+ #ingredients {
+    grid-area: ingredients;
+
+ }  
+ #measure {
+    grid-area: measure;
+ } 
 .ad {
     display: flex;
     align-items: center;
@@ -49,8 +61,4 @@ form {
 
 #inputBar, #searchButton {
     border-radius: 20px;
-}
-
-#ingredients {
-    
 }
