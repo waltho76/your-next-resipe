@@ -12,6 +12,8 @@ body {
 }               
 .container {
     background-color: rgba(255, 228, 196,.6);
+    border: 10px solid rgb(75,75,75);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,17 +22,23 @@ body {
     overflow: scroll;
 }   
 #ingmes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "ingredients measure";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    /*grid-template-areas: "ingredients measure";*/
 
 }
  #ingredients {
-    grid-area: ingredients;
+    background-color: crimson;
+    flex: 25%;
+    text-align: center;
 
  }  
  #measure {
-    grid-area: measure;
+    background-color: gold;
+    flex: 25%;
  } 
 .ad {
     display: flex;
@@ -61,4 +69,9 @@ form {
 
 #inputBar, #searchButton {
     border-radius: 20px;
+}
+
+#searchButton:hover {
+    background: black;
+    color: white;
 }

@@ -21,6 +21,7 @@ fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${textInput}`)
         recipeImg.setAttribute("src", res.meals[0].strMealThumb)
         ingredients.innerText=res.meals[0].strIngredient1
         measure.innerText=res.meals[0].strMeasure1
+        
         recipeDesc.innerText=res.meals[0].strInstructions
         
         
