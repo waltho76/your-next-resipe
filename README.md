@@ -7,4 +7,4 @@ api link
 https://www.themealdb.com/api.php
 
 
-This is a meal database with resipes ingrediants and directions on how to prepare.
+This is a website with resipes for meal ideas and directions on how to prepare. My goal is to complete the site with the ability to search for a recipe with the main ingredient and get a resipe ideal. 

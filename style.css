@@ -51,6 +51,8 @@ body {
 
 img {
     width: 40%;
+    border: 10px solid rgb(75,75,75);
+    border-radius: 20px;
     display: flex;
 }
 
