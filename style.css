@@ -22,22 +22,6 @@ body {
     overflow: scroll;
 }
 
-#ingmes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
- #ingredients {
-    flex: 25%;
-    text-align: center;
-} 
-
- #measure {
-    flex: 25%;
-} 
-
 .ad {
     display: flex;
     align-items: center;
@@ -62,7 +46,6 @@ h1 {
     font-size: 80px;
     color: #F7B99A;
     text-shadow: 5px 6px black;
-    
 } 
 
 form {
