@@ -3,13 +3,13 @@ body {
 }
 
 .wrapper {
-    
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 100vh;
     column-gap: 15px;
     justify-content: space-evenly;
-}               
+}
+
 .container {
     background-color: rgba(255, 228, 196,.6);
     border: 10px solid rgb(75,75,75);
@@ -20,26 +20,24 @@ body {
     padding: 40px;
     height: 100vh;
     overflow: scroll;
-}   
+}
+
 #ingmes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-
-    /*grid-template-areas: "ingredients measure";*/
-
 }
+
  #ingredients {
-    background-color: crimson;
     flex: 25%;
     text-align: center;
+} 
 
- }  
  #measure {
-    background-color: gold;
     flex: 25%;
- } 
+} 
+
 .ad {
     display: flex;
     align-items: center;
@@ -59,8 +57,10 @@ img {
 h1 {
     font-family: 'Lobster', cursive;
     text-align: center;
-    font-size: 60px;
-    text-shadow: 2px 5px #F7B99A;
+    font-size: 80px;
+    color: #F7B99A;
+    text-shadow: 5px 6px black;
+    
 } 
 
 form {

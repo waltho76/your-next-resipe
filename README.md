@@ -7,4 +7,4 @@ api link
 https://www.themealdb.com/api.php
 
 
-This is a meal database with resipes ingrediants and directions and how to prepare.
+This is a meal database with resipes ingrediants and directions on how to prepare.
